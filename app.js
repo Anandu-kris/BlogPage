@@ -7,7 +7,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const app = express();
 
 //MongoDb connection
-const dbURI = 'mongodb+srv://Niraj:root1415@cluster0.2vabmg7.mongodb.net/Nodedb?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://<username>:<password>@cluster0.2vabmg7.mongodb.net/Nodedb?retryWrites=true&w=majority'
 mongoose.connect(dbURI)
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
